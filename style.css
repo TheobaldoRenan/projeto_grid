@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: #D72638;
+    color: white;
+    font-family: "Anta", sans-serif;
+    font-size: 1.5em;
+    border-bottom: 3px solid #140F2D;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    box-sizing: border-box;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px 0 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.container-sobre {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    max-width: 1024px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    padding: 8px;
+}
+
+.container-sobre img {
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 2.5px 2px 3px 0px rgba(0, 0, 0, 0.254);
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 25px;
+    text-align: justify;
+    font-size: 1.1em;
+
+}
+
+.sobre > h1 {
+    color: #3F88C5 ;
+    border-bottom: 2px solid #3F88C5;
+    padding: 8px;
+    margin-bottom: 25px;
+}
+
+.container-produto {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container-produto h1 {
+    color: #3F88C5 ;
+    border-bottom: 2px solid #3F88C5;
+    padding: 8px;
+    margin-bottom: 50px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 50px;
+}
+
+.produto img{
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2.5px 2px 3px 0px rgba(0, 0, 0, 0.254);
+}
+
+.produto p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: #F22B29;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    background-color: #140F2D;
+    padding: 8px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1023px){
+    .container-sobre{
+        display: block;
+        padding: 8px;
+    }
+
+    .container-sobre img{
+        width: 100%;
+    }
+
+    .sobre {
+        margin: 0;
+    }
+
+    .container-produto {
+        width: 100%;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        padding: 8px;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    header {
+        font-size: 70%;
+    }
+
+    .menu a {
+        font-size: 100%;
+    }
+
+    .produtos {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .produto{
+        margin-bottom: 30px;
+        padding: 2px;
+    }
+
+    .produto img {
+        width: 100%;
+    }
+
+
+}
